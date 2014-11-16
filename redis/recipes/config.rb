@@ -9,8 +9,8 @@ node[:deploy].each do |app_name, deploy_config|
 
     # set mode, group and owner of generated file
     mode "0660"
-    group redis
-    owner redis
+    group "redis"
+    owner "redis"
 
     # define variable “@redis” to be used in the ERB template
     variables(
